@@ -11,3 +11,4 @@ spacy
 sentence-transformers
 pypdf
 jsonlines
+pytest
