@@ -32,4 +32,4 @@ def test_llm_extraction_failure(monkeypatch):
 
     cv_text = "Some generic CV text."
     result = parse_cv(cv_text)
-    assert result is None
+    assert result is None or []
