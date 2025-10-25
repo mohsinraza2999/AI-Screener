@@ -7,7 +7,7 @@ pyngrok
 python-multipart
 pydantic
 docx2txt
-spacy
+spacy==3.8.2
 sentence-transformers
 pypdf
 jsonlines
