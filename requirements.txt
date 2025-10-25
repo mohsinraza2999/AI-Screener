@@ -1,0 +1,13 @@
+"langchain<0.1.0"
+langchain-community
+langchain-openai
+fastapi
+uvicorn
+pyngrok
+python-multipart
+pydantic
+docx2txt
+spacy
+sentence-transformers
+pypdf
+jsonlines
