@@ -12,3 +12,4 @@ sentence-transformers
 pypdf
 jsonlines
 pytest
+nltk
