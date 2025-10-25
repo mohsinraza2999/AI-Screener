@@ -1,5 +1,5 @@
 import pytest
-from llm.extract_skills_llm import extract_skills_from_cv
+from app.services.llm.extract_skills_llm import parse_cv
 
 def test_llm_extraction_success(monkeypatch):
     # Mock OpenAI response
@@ -19,7 +19,7 @@ def test_llm_extraction_success(monkeypatch):
     monkeypatch.setattr("openai.ChatCompletion.create", mock_create)
 
     cv_text = "Experienced in Python, SQL, and AWS cloud services."
-    result = extract_skills_from_cv(cv_text)
+    result = parse_cv(cv_text)
     assert "Python" in result
     assert "SQL" in result
     assert "AWS" in result
@@ -31,5 +31,5 @@ def test_llm_extraction_failure(monkeypatch):
     monkeypatch.setattr("openai.ChatCompletion.create", mock_create)
 
     cv_text = "Some generic CV text."
-    result = extract_skills_from_cv(cv_text)
+    result = parse_cv(cv_text)
     assert result is None
