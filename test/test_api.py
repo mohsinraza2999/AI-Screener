@@ -1,6 +1,4 @@
 import pytest
-from app.api.routes import health
-
 from fastapi.testclient import TestClient
 import sys, os
 import re
