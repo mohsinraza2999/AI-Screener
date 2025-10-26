@@ -71,7 +71,7 @@ class Screener:
         # --- Step 6: use llm
         llm_response="No API KEY is available so, LLM’s reasoning is not done!"
         if request.api_key:
-            llm_response=get_llm_response(results[:10],parsed_JD,True)
+            llm_response=get_llm_response(results[:10],request.api_key,parsed_JD,True)
         return results, llm_response
 
     def _extract_skills(self, text: str, parser: bool, api_key: str, model: str) -> List[str]:

@@ -30,7 +30,7 @@ def screen_candidates(api_key: str = Form(...),
         else:
             if api_key:
                 return JSONResponse({
-        "reply": get_llm_response(message,None,False),
+        "reply": get_llm_response(message,api_key,None,False),
         "extracted": "No CV is provided"
     })
             return JSONResponse({
