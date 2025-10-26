@@ -11,3 +11,4 @@ jsonlines
 pytest
 nltk
 pandas
+httpx
