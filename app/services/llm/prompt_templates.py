@@ -22,7 +22,7 @@ def get_ranking_prompt(candidates,JD=None):
 
 
 def get_parsing_prompt(cv):
-    template=f"""You are an expert CV parser. 
+    template="""You are an expert CV parser. 
 Your task is to carefully read the following candidate CV text and extract structured information.
 
 Return the result strictly in valid JSON format with the following schema:
@@ -41,7 +41,7 @@ Guidelines:
 - Keep the JSON keys exactly as shown.
 - Ensure the JSON is syntactically valid and can be parsed by a JSON parser.
 
-Candidate CV:
+Candidate CV:""" +f"""
 --------------------
 {cv}
 --------------------"""
