@@ -31,7 +31,7 @@ def parse_cv(cv_text: str, api_key: Optional[str] = None, model: Optional[str] =
         extracted_data = response['choices'][0]['message']['content']"""
 
         llm=llm_ranking.LangLLM()
-        conversation = ConversationChain(llm=llm, memory = None,verbose=True)
+        conversation = ConversationChain(llm=llm,verbose=True)
         llm_input=get_parsing_prompt(cv_text)
         extracted_data=conversation.predict(input=llm_input)
         logger.info("Skill extraction completed successfully")
