@@ -33,7 +33,7 @@ The tool streamlines the hiring process by automating the initial screening phas
 
 ## 📂 Project Structure
 ```
-ai_screener/
+AI_Screener/
 │ ├── app/
 │   ├── api/
 │   │   ├── main.py              # FastAPI entrypoint 
@@ -76,10 +76,10 @@ ai_screener/
 1. **Clone the repository**
    ```bash
    git clone https://github.com/mohsinraza2999/AI-Screener.git
-   cd ai-screener
+   cd AI-Screener
    ```
 2. **Create a virtual environment & install dependencies**
-  ```
+  ```Bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -87,7 +87,8 @@ pip install -r requirements.txt
 3. **🚀 Usage**
   Run the FastAPI server
     ```Bash
-    uvicorn app.api.main:app --reload```
+    uvicorn app.api.main:app --reload
+    ```
   **Example Workflow**
 - Provide your LLM API key and select the model (e.g., GPT‑4, Gemini).
 - Upload candidate CVs (.pdf or .docx) to the designated folder.
@@ -95,7 +96,9 @@ pip install -r requirements.txt
 - Receive a ranked list of the top 10 candidates.
 
 4. **Run with Docker (optional)**
-   ```docker-compose up --build```
+   ```Bash
+   docker-compose up --build
+   ```
 3# 🛠 Tech Stack
 - Backend: FastAPI, Uvicorn, Python
 - NLP: spaCy, Sentence-Transformers, cosine similarity
@@ -116,7 +119,4 @@ Contributions are welcome!
 ## 📜 License
 This project is licensed under the MIT License.
 See the LICENSE file for details
-This `README.md` is **ready to publish** — it’s professional, self-contained, and developer-friendly.  
-
-Would you like me to also create a **shorter, recruiter-friendly version** of the README (less technical, more business-focused) for non-developer stakeholders?
-
+This `README.md` is **ready to publish** — it’s professional, self-contained, and developer-friendly.
